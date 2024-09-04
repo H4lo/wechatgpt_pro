@@ -1,0 +1,15 @@
+chatgpt:
+  token: sk-xxxxx
+  wechat: "true"
+  openai_url: https://api.openai-proxy.com/v1/chat/completions
+  openai_model: gpt-4-0613
+  prompt: "You are a helpful assistant."
+  wechat_keyword: 
+  #telegram: your telegram token
+  #tgWhitelist: username1,username2
+  #tgKeyword: chatgpt
+
+wechat_group_onfig:
+  daliy_group_name: "聊天吹水"    # 群名称
+  self_name: "0x15634125"           # 本人名称（不是微信号）
+  robot_name: "@给大佬们端茶递水"   # 机器人名称（不是微信号）

@@ -1,0 +1,12 @@
+CREATE DATABASE wechat;
+USE wechat;
+
+
+CREATE TABLE GroupChat (
+    ID INT AUTO_INCREMENT,
+    GroupName VARCHAR(255),
+    SenderName VARCHAR(255),
+    MessageContent TEXT,
+    SendTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (ID)
+);
