@@ -163,19 +163,18 @@ func doTipsCron(s *gocron.Scheduler, time string, tipStr string) {
 }
 
 func SetSchedule() {
-	s := gocron.NewScheduler()
+	// s := gocron.NewScheduler()
 
 	// 工作日打卡
-	doTipsCron(s, "09:40", "Smile, 该上班打卡了")
-	doTipsCron(s, "11:20", "Smile, 该吃饭了，没有什么工作比吃饭更重要！")
-	doTipsCron(s, "12:20", "Smile, 该午休了，中间睡两个时才是对自己拼命工作最大的奖励！")
-	doTipsCron(s, "17:20", "Smile, 该下班了，工作是老板的，命是自己的！")
+	// doTipsCron(s, "09:40", "Smile, 该上班打卡了")
+	// doTipsCron(s, "11:20", "Smile, 该吃饭了，没有什么工作比吃饭更重要！")
+	// doTipsCron(s, "12:20", "Smile, 该午休了，中间睡两个时才是对自己拼命工作最大的奖励！")
+	// doTipsCron(s, "17:20", "Smile, 该下班了，工作是老板的，命是自己的！")
 
-	// 每日提醒
-	s.Every(1).Day().At("09:00").Do(hoTips)
-	s.Every(1).Day().At("18:30").Do(SaveStockInfo)
+	// // 每日提醒
+	// s.Every(1).Day().At("09:00").Do(hoTips)
+	// s.Every(1).Day().At("18:30").Do(SaveStockInfo)
 
-	s.Start()
+	// s.Start()
 
-	// select {}
 }
